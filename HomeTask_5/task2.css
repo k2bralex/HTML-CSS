@@ -1,0 +1,68 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  background-color: #ebebeb;
+  font-family: "Fira Code", sans-serif;
+}
+
+.main-menu{
+  position: fixed;
+  left: 0;
+  top:0;
+  width: 100px;
+  height: 100%;
+  background-color: #999999;
+  overflow: hidden;
+  white-space: nowrap;
+  transition: .3s ease;
+  z-index: 1;
+}
+
+.main-menu:hover{
+  width: 270px;
+}
+
+.main-menu .menu-item{
+  padding: 10px;
+  height: 80px;
+}
+
+.main-menu .menu-item:hover{
+  background-color: #737373;
+}
+
+.main-menu .menu-item img{
+  margin-bottom: -35px;
+  margin-right: 10px;
+  width: 50px;
+  height: 50px;
+  padding: 15px;
+}
+
+a{
+  text-decoration: none;
+  color: white;
+}
+
+.main-block{
+  position: relative;
+  left:170px;
+  top:40px;
+  overflow: hidden;
+  z-index: 0;
+  width: 80%;
+}
+
+.main-block> div{
+  margin: 20px 0 20px 0;
+  font-size: 25px;
+}
+
+.main-block>h5{
+  font-size: 40px;
+}
+
+

@@ -1,0 +1,107 @@
+*{
+  font-family: "Fira Code", sans-serif;
+}
+
+main{
+  width: 100%;
+  height: auto;
+
+  display: flex;
+  flex-flow: row wrap;
+}
+
+main>div{
+  margin-right: 30px;
+  margin-bottom: 10px;
+}
+
+.registration-form, .person-details{
+  display: block;
+}
+
+#1{
+  display: inline-block;
+}
+
+input{
+  position: relative;
+  top:-20px;
+  left:10px;
+  height: 30px;
+  width: 400px;
+  outline: 0;
+  border-width: 0 0 2px;
+  border-color: gray;
+  padding-left: 10px;
+}
+
+.pass input{
+  width: 190px;
+  margin-right: 5px;
+}
+
+.first-last-name input{
+  width: 190px;
+  margin-right: 5px;
+  position: relative;
+  top:9px;
+  left: -5px;
+}
+
+.gender-age{
+  display: block;
+  position: relative;
+  top: 55px;
+  left:-5px;
+}
+
+#gender{
+  height: 30px;
+  width: 200px;
+}
+
+.gender-age input{
+  width: 190px;
+  top: -10px;
+}
+
+.conditions{
+  width: 800px;
+}
+
+.conditions label{
+  display: block;
+}
+
+.conditions input{
+  width: 20px;
+  position: relative;
+  top:7px;
+  margin-right: 12px;
+}
+
+.but{
+  position: relative;
+  left: 760px;
+}
+
+.button{
+  background-color: darkgreen;
+  height: 40px;
+  width: 150px;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  font-size: 14px;
+  margin: 4px 5px;
+  cursor: pointer;
+}
+
+@media only screen and (min-width: 900px) {
+  hr {visibility: hidden }
+}
+
+/*@media only screen and (max-width: 900px) and (min-width: 600px) {
+}*/

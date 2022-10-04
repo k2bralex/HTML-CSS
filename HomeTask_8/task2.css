@@ -1,0 +1,218 @@
+*{
+  font-family: "Fira Code", sans-serif;
+}
+
+body{
+  background-color: #eee1e1;
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+}
+
+main{
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+.inputs{
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+.input-cols{
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: start;
+  width: 50%;
+}
+
+.cols{
+  width: 145px;
+  height: 50px;
+}
+
+.cols>*{
+  height: 50%;
+  border-radius: 5px;
+}
+
+#valid::placeholder, #invalid::placeholder{
+  color: black;
+}
+
+#valid, #invalid{
+  border-radius: 5px;
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: 10%;
+}
+
+#valid{
+  border: 2px solid lawngreen;
+  background-image: url(icon/valid.png);
+}
+
+#invalid{
+  border: 2px solid red;
+  background-image: url(icon/invalid.png);
+}
+
+.checkboxes{
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: stretch;
+}
+
+.check-cols{
+  display: flex;
+  flex-flow: row nowrap;
+  width: 600px;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+  align-content: space-between;
+  margin-right: 100px;
+}
+
+a{
+  position: absolute;
+  top:8px;
+  left: 70px;
+  font-size: 14px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  border: 1px solid gray;
+  border-radius: 5px;
+  top: 0;
+  left: 0;
+  right:0;
+  bottom: 0;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+  width: 60px;
+  height: 27px;
+  align-content: space-between;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 22px;
+  width: 22px;
+  left: 4px;
+  bottom: 2px;
+  background-color: green;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider:before {
+  background-color: red;
+  transform: translateX(28px);
+}
+
+.radio-item {
+  display: inline-block;
+  position: relative;
+  left: 60px;
+}
+
+.radio-item a{
+  left: -60px;
+}
+
+.radio-item input[type='radio'] {
+  display: none;
+}
+
+.radio-item label {
+  color: black;
+  font-size: 14px;
+}
+
+.radio-item label:before {
+  content: " ";
+  display: inline-block;
+  position: relative;
+  top: 5px;
+  margin: 0 5px 0 0;
+  width: 20px;
+  height: 20px;
+  border-radius: 11px;
+  border: 2px solid grey;
+}
+
+.radio-item input[type=radio]:checked + label:after {
+  border-radius: 11px;
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  top: 9px;
+  left: 4px;
+  content: " ";
+  display: block;
+  background: green;
+}
+
+.buttons{
+  display: flex;
+  flex-flow: row nowrap;
+  align-content: space-between;
+}
+
+.button{
+  background-color: green;
+  height: 40px;
+  width: 80px;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  font-size: 14px;
+  margin: 4px 5px;
+  cursor: pointer;
+}
+
+.button1:hover{
+  background-color: #053d05;
+}
+
+.button2, .button3{
+  background-color: Red;
+}
+
+.button3:hover{
+  background-color: #640e0e;
+}
+
+.button4{
+  background-color: #999999;
+}
+
+.button5, .button6{
+  height: 40px;
+  width: 40px;
+  border-radius: 40px;
+  font-size: 18px;
+}
+
+.button6{background-color: red}
+
+#textarea{
+  padding: 10px;
+}

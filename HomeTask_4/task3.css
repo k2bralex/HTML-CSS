@@ -1,0 +1,42 @@
+.container{
+  display: grid;
+  width: auto;
+  height: auto;
+  margin: 40px auto;
+  padding: 20px 150px 60px
+}
+
+.block{
+  height: 150px;
+  width: auto;
+  overflow: hidden;
+}
+
+.text-block{
+  height: 100%;
+  width: 50%;
+  display: inline-block;
+  float: left;
+  text-align: center;
+  padding-top: 60px;
+}
+
+.image{
+  height: 100%;
+  width: 50%;
+  display: inline-block;
+  background-image: url("796852.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+}
+
+.block:hover .text-block{
+  background-color: #a7abb4;
+  transition: background-color 1s;
+}
+
+.block:hover .image{
+  background-size: 300%;
+  transition: background-size 1s ease-out;
+}

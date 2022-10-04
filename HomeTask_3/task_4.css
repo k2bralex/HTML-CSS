@@ -1,0 +1,80 @@
+*{
+  color: white;
+}
+
+footer {
+  background-color: #1d3c67;
+  height: 250px;
+  width: auto;
+}
+
+ol{
+  list-style-type: none;
+  float: left;
+  height: 170px;
+  width: 250px;
+}
+
+li{
+  padding: 3px;
+  margin: 2px;
+}
+
+nav ol li a{
+  text-decoration: none;
+}
+
+nav ol li a:hover{
+  text-decoration: underline;
+  text-decoration-color: white;
+}
+
+.social{
+  float: left;
+  display: inline-block;
+  margin: 10px;
+}
+
+.youtube{
+  background-image: url("icons/youtube_gray.png");
+  background-size: 50px auto;
+  background-repeat: no-repeat;
+  height: 50px;
+  width: 50px;
+}
+
+.facebook{
+  background-image: url("icons/fb_gray.png");
+  background-size: 50px auto;
+  background-repeat: no-repeat;
+  height: 50px;
+  width: 50px;
+}
+
+.instagram{
+  background-image: url("icons/insta_gray.png");
+  background-size: 50px auto;
+  background-repeat: no-repeat;
+  height: 50px;
+  width: 50px;
+}
+
+nav ol .youtube:hover{
+  background-image: url("icons/youtube.png");
+}
+nav ol .facebook:hover{
+  background-image: url("icons/fb.png");
+}
+nav ol .instagram:hover{
+  background-image: url("icons/insta.png");
+}
+
+.wrap{
+  height: 150px;
+  margin: 0 20px 0 20px;
+  padding-top: 25px;
+  padding-left: 60px;
+  border-bottom: 2px solid gray;
+  overflow: hidden;
+}
+

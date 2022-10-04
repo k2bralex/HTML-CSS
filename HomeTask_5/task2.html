@@ -1,0 +1,83 @@
+<!--Реализовать html-страницу с боковым раскрывающимся меню.
+Требования:
+■■ меню должно занимать всю высоту браузера;
+■■ при прокрутке содержимого страницы меню остается на
+месте (скриншот 2);
+■■ при наведении на блок меню оно должно плавно (за 1 се-
+кунду) раскрываться на полную ширину поверх содержи-
+мого (скриншот 3); если мышку убрать с блока меню, то
+происходит плавное возвращение в исходное состояние;
+■■ при наведении мышкой на пункты меню необходимо вы-
+делять их более темным фоном.
+При выполнении задания можно обойтись без создания от-
+дельной анимации, а использовать стиль transition.-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>task2</title>
+  <link rel="stylesheet" href="task2.css">
+</head>
+<body>
+    <div class="main-menu">
+      <ul>
+        <li class="menu-item">
+          <img src="icons/edit.png" alt="EDIT">
+          <a href="#">EDIT</a>
+        </li>
+        <li class="menu-item">
+          <img src="icons/favorites.png" alt="FAVORITES">
+          <a href="#">FAVORITES</a>
+        </li>
+        <li class="menu-item">
+          <img src="icons/history.png" alt="HISTORY">
+          <a href="#">HISTORY</a>
+        </li>
+        <li class="menu-item">
+          <img src="icons/security.png" alt="SECURITY">
+          <a href="#">SECURITY</a>
+        </li>
+        <li class="menu-item">
+          <img src="icons/settings.png" alt="SETTINGS">
+          <a href="#">SETTINGS</a>
+        </li>
+      </ul>
+    </div>
+    <div class="main-block">
+      <h5>Lorem ipsum dolor sit.</h5>
+      <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+        Aut fugit illo illum nam quaerat. Blanditiis cum debitis ducimus eius
+        et explicabo in iusto magni maxime non odit pariatur, porro praesentium
+        quia quisquam tempore vel? Blanditiis eveniet fugiat inventore
+        repellat voluptates?</div>
+      <h5>Lorem ipsum dolor.</h5>
+      <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+        Cum doloremque, dolorum eius, eum incidunt libero, magni molestiae
+        nihil pariatur quos recusandae similique suscipit.</div>
+      <h5>Lorem ipsum dolor sit amet, consectetur.</h5>
+      <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi asperiores
+        assumenda autem beatae cupiditate debitis delectus dolor eligendi error, est
+        eum exercitationem expedita fugiat illo in ipsam labore laboriosam molestias
+        nisi nostrum numquam optio praesentium quidem sapiente sit soluta sunt tenetur
+        ut vero voluptatum. Harum libero molestiae quos, rerum tempora velit voluptate!
+        At cumque debitis ea fugit quod tempore velit veniam. Accusamus autem
+        consequatur culpa ducimus esse facilis fugiat labore libero, magnam maiores
+        nesciunt officiis quibusdam repudiandae saepe sit ut!</div>
+      <h5>Lorem ipsum.</h5>
+      <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi atque
+        blanditiis consectetur culpa cum nesciunt nisi ratione repellat vel?
+        Blanditiis deleniti fugiat itaque maxime minima nesciunt numquam sequi
+        tempore? Amet animi aperiam asperiores cum dicta dolore eaque enim excepturi
+        expedita impedit ipsa, libero minima nihil provident quae quis quo tenetur
+        totam veritatis voluptas. At ea eaque facilis laudantium, molestiae quia rem
+        repellat sit. Aliquam amet aspernatur consectetur corporis, cum cumque debitis
+        deleniti, ducimus eaque eum excepturi fugiat harum impedit ipsum itaque labore
+        magnam modi molestiae natus perferendis praesentium quisquam repudiandae saepe
+        sapiente suscipit! Cupiditate ex harum itaque libero perspiciatis quaerat!</div>
+      <h5>Lorem ipsum dolor sit.</h5>
+      <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+        Cumque, eius est numquam qui repellendus voluptas.</div>
+    </div>
+</body>
+</html>

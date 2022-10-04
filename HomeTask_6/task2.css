@@ -1,0 +1,174 @@
+/*
+*{
+  font-family: "Fira Code", sans-serif;
+  font-size: 16px;
+  margin: 0;
+  padding: 0;
+}
+
+.container{
+  background-color: #c5cace;
+  display: flex;
+  flex-direction: row;
+  margin: 10px;
+  max-width: 800px;
+  min-width: 320px;
+  padding: 20px;
+  overflow-block: hidden;
+}
+
+.images{
+  display: flex;
+  flex-direction: column;
+  color: white;
+  margin: 10px;
+  order:-1;
+}
+
+article{
+  margin: 20px;
+}
+
+article>* {
+  margin-bottom: 10px;
+}
+
+.frame{
+  background-color: #1d3c67;
+  border-radius: 10px;
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.frame>a{
+  padding: 20px;
+}
+
+a{
+  text-align: right;
+}
+
+img{
+  width: 300px;
+  height: 200px;
+  border-radius: 10px 10px 0 0;
+}
+*/
+
+*{
+  font-family: "Fira Code", sans-serif;
+  font-size: 16px;
+}
+
+.container{
+  background-color: #c5cace;
+  display: flex;
+  flex-direction: column;
+}
+
+.images{
+  float: right;
+}
+
+.frame {
+  background-color: #294577;
+  width: 300px;
+  display: block;
+
+  position: relative;
+  left: -50px;
+  margin-right: 10px;
+  margin-bottom: 20px;
+
+  border-radius: 10px;
+
+  color: white;
+  text-align: right;
+}
+
+article {
+  float: left;
+  width: inherit;
+  margin: 0 20px;
+}
+
+img{
+  width: 300px;
+  height: 200px;
+  border-radius: 10px 10px 0 0;
+}
+
+p{
+  padding-right: 45%;
+}
+
+a{
+  padding: 10px;
+}
+
+@media screen and (min-width: 600px) and (max-width:800px) {
+
+  .images{
+    float: none;
+    overflow: auto;
+
+  }
+  .frame{
+    position: unset;
+    display: inline-block;
+    left: 0;
+  }
+
+  article{
+    float: none;
+    display: flex;
+    flex-direction: column;
+  }
+
+  p{
+    padding-right: 0;
+  }
+
+  image{
+
+  }
+
+  article #item1{
+    order:-2;
+  }
+  article #item3{
+    order:-1;
+  }
+}
+
+@media screen and (max-width:600px) {
+  .images{
+    float: none;
+    overflow: auto;
+  }
+
+  .frame{
+    position: unset;
+    display: block;
+    left: 0;
+  }
+
+  article{
+    float: none;
+    display: flex;
+    flex-direction: column;
+  }
+
+  p{
+    padding-right: 0;
+  }
+
+  article #item1{
+    order:-2;
+  }
+  article #item3{
+    order:-1;
+  }
+}
+

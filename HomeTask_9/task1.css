@@ -1,0 +1,198 @@
+body {
+  font-family: "Fira Code", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background: #1d3c67;
+  width: 100%;
+  height: 70px;
+  max-width: 1475px;
+}
+
+header div {
+  display: flex;
+  flex-flow: row nowrap;
+}
+
+header > div > div > img {
+  height: 50px;
+  width: 50px;
+  margin: 10px;
+}
+
+.avatar {
+  margin-left: auto;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  flex-flow: row nowrap;
+}
+nav ul li {
+  text-align: center;
+  margin: 10px;
+}
+nav ul li a {
+  text-decoration: none;
+  color: gray;
+}
+nav ul li a:hover {
+  color: white;
+}
+
+main > div {
+  padding: 40px;
+  text-align: center;
+  max-width: 1390px;
+}
+
+main > div > a {
+  font-size: 35px;
+}
+
+main .annots {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: flex-end;
+  padding-right: 25px;
+}
+main .annots div {
+  display: inline-block;
+}
+main .annots div button {
+  height: 15px;
+  width: 15px;
+  border: 1px solid lightgray;
+  border-radius: 15px;
+}
+main .annots div #cur {
+  background-color: #cccccc;
+}
+main .annots div #rev {
+  background-color: limegreen;
+}
+main .annots div #unrev {
+  background-color: #5e9696;
+}
+main .annots div #over {
+  background-color: palevioletred;
+}
+
+.tasks {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.block {
+  background-color: #cccccc;
+  border: none;
+  border-radius: 10px;
+  height: 170px;
+  width: 400px;
+  margin: 10px;
+  padding: 20px;
+  color: white;
+}
+.block a {
+  font-size: 18px;
+}
+.block label > * {
+  height: 30px;
+  font-size: 16px;
+}
+.block input {
+  width: 280px;
+}
+.block label > button {
+  position: relative;
+  top: -1px;
+  width: 100px;
+  height: 37px;
+  cursor: pointer;
+}
+
+.block > *, .block1 > * {
+  display: flex;
+  margin-bottom: 10px;
+  padding: 10px;
+}
+
+.block1 {
+  background-color: #5e9696;
+  border: none;
+  border-radius: 10px;
+  height: 170px;
+  width: 400px;
+  margin: 10px;
+  padding: 20px;
+  color: white;
+}
+.block1 a {
+  font-size: 18px;
+  text-align: start;
+}
+.block1 a b {
+  width: 350px;
+}
+.block1 label > * {
+  height: 30px;
+  font-size: 16px;
+}
+.block1 label > button {
+  display: inline-block;
+  width: 250px;
+  height: 37px;
+  color: white;
+  background-color: #5e9696;
+  box-shadow: none;
+  border-radius: 5px;
+  border: 1px solid white;
+  cursor: pointer;
+}
+.block1 label > button img {
+  height: 15px;
+  width: 15px;
+  margin-right: 5px;
+}
+
+.rev {
+  background-color: limegreen;
+}
+.rev label > button {
+  background-color: limegreen;
+}
+
+.unRev {
+  background-color: #5e9696;
+}
+
+.overDue {
+  background-color: palevioletred;
+}
+
+.grade {
+  position: relative;
+  display: inline-block;
+  background-color: darkgreen;
+  color: white;
+  box-shadow: none;
+  border-radius: 15px;
+  border: 1px solid;
+  height: 20px;
+  width: 35px;
+  padding-bottom: 10px;
+}
+
+.qwerty {
+  position: relative;
+  top: -100px;
+  text-align: left;
+}
+.qwerty a {
+  padding: 15px;
+}
+
+/*# sourceMappingURL=task1.css.map */

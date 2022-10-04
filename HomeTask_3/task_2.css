@@ -1,0 +1,51 @@
+ol{
+  list-style-type: none;
+  height: fit-content;
+  width: fit-content;
+}
+
+li{
+  margin: 0;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background: #999999;
+}
+
+a{
+  text-decoration: none;
+  font-size: 10pt;
+  color: #efefef;
+  padding-left: 15px;
+  padding-right: 40px;
+}
+
+.bgSize{
+  background-size: 50px auto;
+  background-repeat: no-repeat;
+  height: 50px;
+  width: 50px;
+  float: left;
+  margin: -15px 0 0 0;
+}
+
+.edit{
+  background-image: url("icons/edit.png");
+}
+.favorites{
+  background-image: url("icons/favorites.png");
+}
+.history{
+  background-image: url("icons/history.png");
+}
+.security{
+  background-image: url("icons/security.png");
+}
+.settings{
+  background-image: url("icons/settings.png");
+}
+
+nav ol li:hover{
+  background-color: #4b545f;
+}
+
+

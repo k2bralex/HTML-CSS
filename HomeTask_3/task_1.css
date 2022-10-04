@@ -1,0 +1,38 @@
+.block{
+  width: auto;
+  height: auto;
+  margin-bottom: auto;
+}
+
+.wrap{
+  margin: 20px;
+  border-bottom: 2px solid gray;
+  overflow: hidden;
+}
+
+figure{
+  float: left;
+  border: 1px solid gray;
+  border-radius: 10px;
+  border: 1px solid gray;
+  width: 220px;
+  height: 270px;
+  margin: 10px;
+}
+
+figcaption{
+  padding: 2px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.icon{
+  width: 200px;
+  height: 200px;
+  margin: 10px;
+}
+
+
+
+
+

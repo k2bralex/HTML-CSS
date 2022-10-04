@@ -1,0 +1,199 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+
+/*Header Block*/
+body{
+  background-color: #ebebeb;
+  font-family: "Fira Code", sans-serif;
+  padding: 15px;
+}
+
+header{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+}
+
+header div img{
+  width: 80px;
+  height: 80px;
+}
+
+header div a {
+  position: relative;
+  top:-30px;
+}
+
+header div a:first-child {
+  left: -10px;
+}
+
+header div a:last-child {
+  left: 10px;
+}
+
+
+/*Main Block*/
+
+main{
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+}
+
+/*Menu*/
+.folders{
+  position: relative;
+  width: 270px;
+  height: 300%;
+  overflow: hidden;
+  white-space: nowrap;
+  z-index: 1;
+}
+
+.folders:hover{
+  width: 270px;
+}
+
+.folders .menu-item{
+  padding: 10px;
+  height: 80px;
+}
+
+.folders .menu-item:hover{
+  background-color: #737373;
+}
+
+.folders .menu-item img{
+  margin-bottom: -35px;
+  margin-right: 10px;
+  width: 50px;
+  height: 50px;
+  padding: 15px;
+}
+
+a{
+  text-decoration: none;
+  color: black;
+}
+
+/*Mail List*/
+
+.list-letters{
+  position: fixed;
+  left: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  width: 75%;
+}
+
+.letter{
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+
+  flex-grow: 0;
+}
+
+.letter>* {
+  margin: 20px;
+}
+
+.ReTheSub{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  min-width: 603px;
+  flex-grow: 0;
+  flex-shrink: 1;
+}
+
+.recipients{
+  min-width: 50px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.theme{
+  min-width: 20%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.dash{
+  flex-basis: 3px;
+  color: #808083;
+}
+
+.subject{
+  min-width: 300px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  color: #808083;
+}
+
+.date{
+  min-width: 100px;
+  white-space: nowrap;
+}
+
+.letter img{
+  width: 15px;
+  height: 15px;
+}
+
+@media only screen and (max-width: 500px){
+  a{display: none}
+  .folders{
+    width: 80px;
+  }
+
+  .folders:hover{
+    width: 100px;
+  }
+
+  .list-letters{
+    position: fixed;
+    left: 120px;
+  }
+
+  .ReTheSub{
+    flex-direction: column;
+
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+
+    margin-top: 1em;
+  }
+
+  .letter{
+    flex: 0 0 auto;
+  }
+}
+
+@media only screen and (max-width: 800px) and (min-width: 500px){
+  .dash {display: none}
+  .ReTheSub{
+    flex-direction: column;
+
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+
+    margin-top: 1em;
+  }
+
+  .letter{
+    flex: 0 0 auto;
+  }
+}
+

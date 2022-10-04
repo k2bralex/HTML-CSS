@@ -1,0 +1,40 @@
+<!--Реализовать html-страницу с несколькими блоками текст +
+картинка.
+Требования:
+■■ блок состоит из текста и картинки, которые делят доступ-
+ную ширину поровну;
+■■ блок должен быть фиксированной высоты;
+■■ текст должен находиться посередине своей части;
+■■ картинка должна занимать всю свою часть по ширине и
+высоте;
+■■ картинка не должна выходить за пределы своей части;
+■■ при наведении мышкой на блок (текст + картинка):
+• он должен полностью покрыться полупрозрачной черной
+плашкой за 0.3 секунды;
+• картинка должна плавно (за 1 секунду) увеличиться, но
+при этом не выйти за пределы своей части.-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>task3</title>
+  <link rel="stylesheet" href="task3.css">
+</head>
+<body>
+  <div class="container">
+    <div class="block">
+      <div class="text-block">HELLO WORLD!</DIV>
+      <div class="image"></div>
+    </div>
+    <div class="block">
+      <div class="text-block" style="float: right">HELLO WORLD!</DIV>
+      <div class="image"></div>
+    </div>
+    <div class="block">
+      <div class="text-block">HELLO WORLD!</DIV>
+      <div class="image"></div>
+    </div>
+  </div>
+</body>
+</html>

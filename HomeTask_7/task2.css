@@ -1,0 +1,47 @@
+.flexbox{
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-between;
+  width: 70%;
+}
+
+.block{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height:auto;
+}
+
+img{
+  width: fit-content;
+  height: fit-content;
+}
+
+.block>div{
+  width: 600px;
+  padding: 20px;
+  height: auto;
+  vertical-align: middle;
+}
+
+.left{
+  background-color: rosybrown;
+  border-radius: 40px 40px 40px 0;
+}
+
+.right{
+  background-color: lightskyblue;
+  border-radius: 40px 40px 0 40px;
+  text-align: right;
+}
+
+.flexbox .block{
+  margin: 5px;
+}
+
+img[src=""] {
+  visibility: hidden;
+  width: 64px;
+  height: 64px;
+}
+

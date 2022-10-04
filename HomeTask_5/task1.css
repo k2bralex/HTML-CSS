@@ -1,0 +1,36 @@
+table{
+  border: 1px solid black;
+  text-align: left;
+  position: relative;
+  border-collapse: collapse;
+}
+
+th{
+  border: 1px solid black;
+  height: 100px;
+  width: 200px;
+  background: #07386b;
+  color: white;
+}
+
+thead th {
+  position: sticky;
+  top: 0;
+}
+
+td{
+  border: 1px solid black;
+  height: 100px;
+  min-width: 200px;
+}
+
+td:first-child{
+  position: sticky;
+  left: 0;
+  background: #c9466e;
+}
+
+table thead th:nth-child(1) {
+  z-index: 1;
+  left: 0;
+}

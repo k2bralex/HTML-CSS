@@ -1,0 +1,44 @@
+*{
+  padding-right: 20px;
+}
+
+li{
+  padding-left: 10px;
+}
+
+div{
+  background-color: lightgray;
+  padding: 5px 30px 5px;
+}
+
+.even{
+  background-color: deepskyblue;
+  padding: 5px 30px 5px;
+}
+
+.odd{
+  background-color: lightpink;
+  padding: 5px 30px 5px;
+}
+
+.cheked{
+  list-style-image: url("checked_16.png");
+}
+
+.uncheked{
+  list-style-image: url("unchecked_16.png");
+}
+
+img{
+  height: 15px;
+  padding-left: 15px;
+  vertical-align: center;
+}
+
+span{
+  font-size: 70%;
+  vertical-align: center;
+  padding-left: 10px;
+  color: red;
+
+}

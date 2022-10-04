@@ -1,0 +1,32 @@
+.text{
+  position: absolute;
+  top: 60px;
+  left: 250px;
+  z-index: -1;
+  font-size: 20pt;
+}
+
+.block{
+  display: inline-block;
+  overflow: auto;
+  background-color: darkmagenta;
+  height: 200px;
+  width: 250px;
+  border: 10px solid rebeccapurple;
+  margin: 0;
+  float: left;
+  z-index: 1;
+}
+
+.container:hover .block1{
+  transform-origin: left;
+  transform: perspective(1200px) rotateY(50deg);
+  transition: transform 2s;
+}
+
+.container:hover .block2{
+  transform-origin: right;
+  transform: perspective(1200px) rotateY(-50deg);
+  transition: transform 2s;
+}
+

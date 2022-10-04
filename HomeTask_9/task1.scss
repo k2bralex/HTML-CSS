@@ -1,0 +1,220 @@
+$colorWhite: white;
+$colorGray: gray;
+$colorOver: palevioletred;
+$colorUnrev: #5e9696;
+$colorRev: limegreen;
+$colorCur: #cccccc;
+
+
+body{
+  font-family: "Fira Code", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header{
+  background: #1d3c67;
+  width: 100%;
+  height: 70px;
+  max-width: 1475px;
+}
+
+header div{
+  display: flex;
+  flex-flow: row nowrap;
+}
+
+header>div>div>img{
+  height: 50px;
+  width: 50px;
+  margin: 10px;
+}
+
+.avatar{
+  margin-left: auto;
+}
+
+nav{
+  ul{
+    list-style: none;
+    display: flex;
+    flex-flow: row nowrap;
+    li{
+      text-align: center;
+      margin: 10px;
+      a{
+        text-decoration: none;
+        color: $colorGray;
+      }
+      a:hover{
+        color: $colorWhite;
+      }
+    }
+  }
+}
+
+main>div{
+  padding: 40px;
+  text-align: center;
+  max-width: 1390px;
+}
+
+main>div>a{
+  font-size: 35px;
+}
+
+main .annots{
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: flex-end;
+  padding-right: 25px;
+  div{
+    display: inline-block;
+    button{
+      height: 15px;
+      width: 15px;
+      border: 1px solid lightgray;
+      border-radius: 15px;
+    }
+    #cur{
+      background-color: $colorCur;
+    }
+    #rev{
+      background-color: $colorRev;
+    }
+    #unrev{
+      background-color: $colorUnrev;
+    }
+    #over{
+      background-color: $colorOver;
+    }
+  }
+}
+
+.tasks{
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.block{
+  background-color: $colorCur;
+  border: none;
+  border-radius: 10px;
+  height: 170px;
+  width: 400px;
+  margin: 10px;
+  padding: 20px;
+
+  color:$colorWhite;
+
+  a{
+    font-size: 18px;
+  }
+  label>*{
+    height: 30px;
+    font-size: 16px;
+  }
+
+  input{
+    width: 280px;
+  }
+
+  label>button{
+    position: relative;
+    top: -1px;
+    width: 100px;
+    height: 37px;
+    cursor:pointer;
+  }
+
+}
+
+.block>*, .block1>*{
+  display: flex;
+  margin-bottom: 10px;
+  padding: 10px;
+}
+
+.block1{
+  background-color: $colorUnrev;
+  border: none;
+  border-radius: 10px;
+  height: 170px;
+  width: 400px;
+  margin: 10px;
+  padding: 20px;
+
+  color: $colorWhite;
+
+  a{
+    font-size: 18px;
+    text-align: start;
+    b{
+      width: 350px;
+    }
+  }
+
+  label>*{
+    height: 30px;
+    font-size: 16px;
+  }
+
+  label>button{
+    display: inline-block;
+    width: 250px;
+    height: 37px;
+    color: $colorWhite;
+    background-color: $colorUnrev;
+
+    box-shadow: none;
+    border-radius: 5px;
+    border: 1px solid $colorWhite;
+
+    cursor:pointer;
+
+    img{
+      height: 15px;
+      width: 15px;
+      margin-right: 5px;
+    }
+  }
+
+}
+
+.rev{
+  background-color: $colorRev;
+  label>button{
+    background-color: $colorRev;
+  }
+}
+
+.unRev{
+  background-color: $colorUnrev;
+}
+
+.overDue{
+  background-color: $colorOver;
+}
+
+.grade{
+  position: relative;
+  display: inline-block;
+  background-color: darkgreen;
+  color: $colorWhite;
+  box-shadow: none;
+  border-radius: 15px;
+  border: 1px solid;
+  height: 20px;
+  width: 35px;
+  padding-bottom: 10px;
+}
+
+.qwerty{
+  position: relative;
+  top: -100px;
+  text-align: left;
+  a{
+    padding: 15px;
+  }
+}
+
